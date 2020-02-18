@@ -16,17 +16,19 @@ public class Producte {
     private int serie_id;
     private String prod_descripcio;
     private int prod_descompte;
+    private int prod_preu;
 
     public Producte() {
     }
 
-    public Producte(int prod_id, String prod_nom, String prod_foto, int serie_id, String prod_descripcio, int prod_descompte) {
+    public Producte(int prod_id, String prod_nom, String prod_foto, int serie_id, String prod_descripcio, int prod_descompte, int prod_preu) {
         this.prod_id = prod_id;
         this.prod_nom = prod_nom;
         this.prod_foto = prod_foto;
         this.serie_id = serie_id;
         this.prod_descripcio = prod_descripcio;
         this.prod_descompte = prod_descompte;
+        this.prod_preu = prod_preu;
     }
 
     public int getProd_id() {
@@ -53,6 +55,10 @@ public class Producte {
         return prod_descompte;
     }
 
+    public int getProd_preu() {
+        return prod_preu;
+    }
+
     public void setProd_id(int prod_id) {
         this.prod_id = prod_id;
     }
@@ -76,6 +82,10 @@ public class Producte {
     public void setProd_descompte(int prod_descompte) {
         this.prod_descompte = prod_descompte;
     }
-    
-    
+
+    public void setProd_preu(int prod_preu) {
+        this.prod_preu = prod_preu;
+    }
+
+       
 }
